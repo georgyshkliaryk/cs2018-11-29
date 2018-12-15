@@ -22,7 +22,26 @@ size прочитать c клавиатуры. Числа разделить п
 1. Программа должна считывать переменную int size c клавиатуры.
 2. Программа должна выводить текст на экран.
 3. Программа должна выводить таблицу умножения size х size.
- */
+ */import java.util.Scanner;
 public class TaskB2 {
 
+    public static void main(String[] args) throws Exception
+    {Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+
+        int i=1,n=1;
+
+        while(i<=size)
+        {
+            System.out.print(i+" ");
+            while(n<=size-1)
+            {
+                n++;
+                System.out.print(i*n+" ");
+            }
+            i++;
+            n=1;
+            System.out.println("");
+        }
+    }
 }

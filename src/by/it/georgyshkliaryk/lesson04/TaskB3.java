@@ -24,8 +24,26 @@ package by.it.georgyshkliaryk.lesson04;
 
  */
 
-
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
 
+
+        {
+            Scanner sc = new Scanner(System.in);
+            int x = sc.nextInt();
+            int n = 1;
+            int sum = 0;
+
+            while (sum <= x) {
+                if (sum > 0)
+                    System.out.print(sum + ",");
+                sum = sum + n;
+                n = n + 1;
+
+            }
+
+        }
+    }
 }

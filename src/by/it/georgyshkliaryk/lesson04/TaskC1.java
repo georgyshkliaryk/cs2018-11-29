@@ -36,7 +36,41 @@ package by.it.georgyshkliaryk.lesson04;
 За месяц 14 начислено $0.0
 
 */
-public class TaskC1 {
 
+import java.util.Scanner;
+
+public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc = new Scanner(System.in);
+        double zp = sc.nextInt();
+        double sum = 0;
+        //double x=666.0;
+        if (zp < 300 && zp > 3000)
+            System.out.println("Мы вам перезвоним!");
+
+        else {
+            for (int m = 0; m <= 14; m++) {
+                if (m == 0 || m == 13 || m == 14) {
+                    sum = 0.0;
+                    System.out.println("За месяц " + m + " начислено $" + sum);
+                } else {
+                    sum = zp + (zp * 0.5);
+                    System.out.println("За месяц " + m + " начислено $" + sum);
+                }
+
+                if (sum == 666.0) {
+
+                    System.out.println("За месяц " + m + " начислено $" + sum);
+                    break;
+                }
+
+            }
+
+        }
+    }
 
 }
+
+
+

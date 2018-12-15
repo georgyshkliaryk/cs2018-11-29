@@ -26,6 +26,9 @@ package by.it.georgyshkliaryk.lesson04;
 256
 
  */
+import java.util.Scanner;
 public class TaskC2 {
+    Scanner sc = new Scanner(System.in);
+    double x = sc.nextInt();
 
 }

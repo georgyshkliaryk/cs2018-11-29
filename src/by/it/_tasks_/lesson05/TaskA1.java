@@ -26,4 +26,5 @@ package by.it._tasks_.lesson05;
 
 public class TaskA1 {
 
+
 }

@@ -23,6 +23,5 @@ package by.it.georgyshkliaryk.lesson04;
 десять умножить на десять равно сто
 */
 
-public class TaskC3 {
+//public class TaskC3
 
-}
