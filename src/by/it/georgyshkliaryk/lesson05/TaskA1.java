@@ -30,14 +30,13 @@ public class TaskA1 {
         int[] array = new int[10];
         Scanner
                 sc = new Scanner(System.in);
-        for (int i = array.length; i >= 0; i++) {
+        for (int i = 9; i >= 0; i--) {
             array[i] = sc.nextInt();
 
         }
-        for (int i = array.length - 1; i >= 0; i--) {
-            int element = array[i];
-            System.out.println(element);
-        }
-    }
+            for (int element : array) {
+                System.out.println(element);
+            }
 
+    }
 }
